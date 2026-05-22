@@ -1,4 +1,4 @@
-# Proyecto 6 - Plataforma de Compras con Rutas de Envío
+# Proyecto 6 - Plataforma de E-Commerce
 Laura Niño
 
 ---
