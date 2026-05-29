@@ -1,11 +1,11 @@
+# afd.py - Versión simplificada (recomendada)
 class AFDProcesoCompra:
     def __init__(self):
-        self.estados = {"inicio", "buscando", "carrito", "pago", "confirmado", "cancelado"}
+        self.estados = {"inicio", "buscando", "pago", "confirmado", "cancelado"}
         self.alfabeto = {"agregar", "quitar", "pagar", "confirmar", "cancelar"}
         self.transiciones = {
             "inicio": {"agregar": "buscando"},
-            "buscando": {"agregar": "buscando", "quitar": "buscando", "pagar": "carrito"},
-            "carrito": {"pagar": "pago", "cancelar": "cancelado"},
+            "buscando": {"agregar": "buscando", "quitar": "buscando", "pagar": "pago"},
             "pago": {"confirmar": "confirmado", "cancelar": "cancelado"},
             "confirmado": {"cancelar": "cancelado"},
             "cancelado": {}
